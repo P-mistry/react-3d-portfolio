@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import Loader from '../components/Loader'
 
-import  island from '../models/island';
+import  Island from '../models/Island';
       {/* <div className='absolute top-28 left-0 right-0 z-10 flex
       items-center justify-center'>
         POPUP
@@ -22,7 +22,7 @@ const Home = () => {
           <spotLight />
           <hemisphereLight />
 
-          <island />
+          <Island />
         </Suspense>
       </Canvas>
     </section>
