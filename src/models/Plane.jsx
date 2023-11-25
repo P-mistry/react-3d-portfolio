@@ -1,8 +1,15 @@
 import React from 'react'
 
-const Plane = () => {
+import planeScene from '../assets/3d/plane.glb';
+import { useGLTF } from '@react-three/drei';
+
+const Plane = ({ isRotating, ...props }) => {
+  const { scene, Animations } = useGLTF(planeScene);
+
   return (
-    <div>Plane</div>
+    <mesh {...props}>
+      <primitive object={scene} />
+    </mesh>
   )
 }
 
